@@ -73,15 +73,41 @@ list-style: none;
 justify-content: space-between;
 }
 
+.mobile {
+display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+nav .container {
+display: none;
+}
+.mobile {
+display: block;
+text-align: center;
+}
+}
+
+
 main .container {
 justify-content: space-between;
 flex-wrap: wrap;
 }
 
-.product {
+.pen {
 width: 30%;
 margin-top: 3rem;
 }
+
+.glasses {
+width: 30%;
+margin-top: 3rem;
+}
+
+.watch {
+width: 30%;
+margin-top: 3rem;
+}
+
 
 .image {
 height: 9rem;
@@ -91,10 +117,13 @@ justify-content: center;
 padding: 2rem 0;
 }
 
+
 .image img {
 width: 8rem;
 
 }
+
+
 .caption {
 background-color: black;
 color: white;
@@ -125,13 +154,51 @@ margin-top: 0.5rem;
 }
 
 footer {
-height: 5rem;
 background-color: black;
-display: flex;
-justify-content: center;
+height: 5rem;
+text-align: center;
 }
 
 footer .container {
 font-family: Helvetica;
 text-align: left;
+padding-top: 4rem;
+
+}
+
+@media only screen and (max-width: 1024px){
+.one {
+font-size: 0.77rem;
+}
+.pen {
+width: 47%;
+}
+.glasses {
+display: none;
+}
+}
+
+@media only screen and (max-width: 480px){
+.box {
+margin-top: 5rem;
+padding-left: 2rem;
+padding-top: 1rem;
+width: 100%;
+}
+.watch {
+display: none;
+}
+.product {
+width: 90%;
+}
+.business {
+width: 90%;
+flex-wrap: wrap;
+}
+.caption2 {
+margin-top: 0.5rem;
+}
+.banner {
+height: 15rem;
+}
 }
